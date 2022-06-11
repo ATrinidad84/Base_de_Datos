@@ -9,9 +9,25 @@ Ejercicio:
 
 1. ¿Qué es un DataWarehouse?(valor 2)
 
+Un repositorio central de datos, un data warehouse es un tipo de base de datos diseñado específicamente para consultas y análisis rápidos.
+
+Data warehouse es un sistema que agrega y combina información de diferentes fuentes en un almacén de datos único y centralizado; consistente para respaldar el análisis empresarial, la minería de datos, inteligencia artificial y Machine Learning. Data warehouse permite a una organización o empresa ejecutar análisis potentes en grandes volúmenes petabytes y petabytes de datos históricos de formas que una base de datos estándar simplemente no puede.
+  
+
 2. Realiza un diseño del modelo en estrella (valor 2)
 
+SOLUCION:
+
+![Untitled Diagram drawio (1)](https://user-images.githubusercontent.com/102439544/173208213-e95eb0a0-8fe8-455a-975a-0dd2b7998e39.png)
+
+
 3. Realiza un diseño del modelo copo de nieve (valor 2)
+
+
+SOLUCION
+
+
+![Untitled Diagram drawio (2)](https://user-images.githubusercontent.com/102439544/173208373-22df0575-a12b-4887-92dc-a22e6360c0c2.png)
 
 
 ## Práctica 7
