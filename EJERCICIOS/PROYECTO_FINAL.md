@@ -29,3 +29,11 @@ precio y categoría.
 un código de categoría único.
 
 ● Una pieza sólo puede pertenecer a una categoría.
+
+
+SOLUCION
+
+![Relacional_pzasProveedores drawio](https://user-images.githubusercontent.com/102439544/173253717-84183046-6c1e-4ed2-ab0a-a9284e119412.png)
+
+
+
