@@ -44,13 +44,11 @@ Una vez creada la tabla escriba dos triggers con las siguientes características
 Una vez creados los triggers escribe varias sentencias de inserción y actualización
 sobre la tabla alumnos y verifica que los triggers se están ejecutando
 correctamente.
-
 SOLUCION
 
+
 CREATE DATABASE ejemplo_trigger;
-
 USE ejemplo_trigger;
-
 CREATE TABLE nota(
 
 	Id_nota INT UNSIGNED PRIMARY KEY,
@@ -62,9 +60,13 @@ CREATE TABLE nota(
 	);
 
 CREATE TABLE registro(
+
 	Id_regristo INT AUTO_INCREMENT PRIMARY KEY,
+	
   	Accion VARCHAR (200),
+	
   	Fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+	
 	);
 
 DELIMITER //
