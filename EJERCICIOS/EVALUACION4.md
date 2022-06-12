@@ -48,12 +48,17 @@ correctamente.
 SOLUCION
 
 CREATE DATABASE ejemplo_trigger;
+
 USE ejemplo_trigger;
 
 CREATE TABLE nota(
+
 	Id_nota INT UNSIGNED PRIMARY KEY,
+	
   	Producto VARCHAR(50),
+	
   	Cantidad VARCHAR(50)
+	
 	);
 
 CREATE TABLE registro(
