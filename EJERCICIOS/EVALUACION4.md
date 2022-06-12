@@ -44,56 +44,38 @@ Una vez creada la tabla escriba dos triggers con las siguientes características
 Una vez creados los triggers escribe varias sentencias de inserción y actualización
 sobre la tabla alumnos y verifica que los triggers se están ejecutando
 correctamente.
+
 SOLUCION
 
-
-	CREATE DATABASE ejemplo_trigger;
-
-	USE ejemplo_trigger;
-
-	CREATE TABLE nota(
-
-	Id_nota INT UNSIGNED PRIMARY KEY,
-	
-  	Producto VARCHAR(50),
-	
-  	Cantidad VARCHAR(50)
-	
+	CREATE DATABASE test;
+	USE test;
+	CREATE TABLE alumnos(
+	id_alumno INT UNSIGNED PRIMARY KEY,
+  	nombre VARCHAR(50),
+  	apellido1 VARCHAR (50),
+  	apellido2 VARCHAR (50),
+  	nota FLOAT
 	);
-
 	CREATE TABLE registro(
-
-	Id_regristo INT AUTO_INCREMENT PRIMARY KEY,
-	
+	Id_registro INT AUTO_INCREMENT PRIMARY KEY,
   	Accion VARCHAR (200),
-	
   	Fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-	
 	);
 
 	DELIMITER //
-
-	CREATE TRIGGER tg_check_nota_before_insert BEFORE INSERT ON nota
-
+	CREATE TRIGGER trigger_check_nota_before_insert BEFORE INSERT ON alumnos
 	FOR EACH ROW BEGIN
-
-	INSERT INTO registro(Accion) VALUES ('Se agregó una nota');
-	
+	INSERT INTO registro(Accion) VALUES ('SE INGRESO UN REGISTRO');
 	END//
-	
 	DELIMITER ;
 
 	DELIMITER //
-	
-	CREATE TRIGGER tg_check_nota_before_update BEFORE UPDATE ON nota
-	
+	CREATE TRIGGER trigger_check_nota_before_update BEFORE UPDATE ON alumnos
 	FOR EACH ROW BEGIN
-	
-	INSERT INTO registro(Accion) VALUES ('Se modifico una nota');
-	
+	INSERT INTO registro(Accion) VALUES ('SE MODIFICO UN REGISTRO');
 	END//
-	
 	DELIMITER ;
 
 
-https://www.db-fiddle.com/f/4FeWS6DSsqRMkw37q6CRwV/2
+https://www.db-fiddle.com/f/6eKd6NYRZrTrsjWonsYAkT/4
+
