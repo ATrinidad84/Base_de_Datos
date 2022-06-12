@@ -3,22 +3,47 @@
 Objetivo: Demostrar la correcta identificación de los conceptos del lenguaje SQL
 Ejercicio:
 
-1. Menciona los comandos DMl: (valor .85)
+1. Menciona los comandos DML: (valor .85)
+
+- SELECT
+- INSERT
+- DELETE
+- UPDATE
 
 2. Menciona 3 tipos de datos que existen: (valor .85)
+
+- CHAR
+- VARCHAR
+- INT
+- FLOAT
+- DATE
 
 
 3. ¿Qué diferencia existe entre TRUNCATE y DELETE?(valor .85)
 
+DELETE
+Borra una serie de filas de la tabla. Podemos usar una claúsula WHERE para limitar las filas a borrar, a las que cumplan una condición.
+
+TRUNCATE
+A diferencia de DELETE, TRUNCATE elimina todas las filas de la tabla sin borrar la tabla. También resetea los contadores de auto incremento a 0. No borra la tabla como tal, la llamada estructura, por lo que luego puede comenzar a hacer inserciones.
+
 4. ¿Para qué se utiliza el atributo UNIQUE?(valor .85)
+
+UNIQUE
+Nos permite establecer este atributo a los campos que requerimos tengan datos que no se puedan repetir.
 
 5. ¿Qué diferencia hay entre los tipos de datos VARCHAR y CHAR? (valor .85)
 
+char(n) Se utiliza para definir una cadena de caracteres de longitud fija, con una longitud especificada por el usuario.
+Mientras que varchar(n) se usa para definir una cadena de caracteres de longitud variable con una longitud máxima n especificada por el usuario.
 
 6. Defina brevemente el significado de las siglas SQL(valor .85)
 
+SQL (Structured Query Language) es un lenguaje estándar e interactivo de acceso a bases de datos relacionales que permite especificar diversos tipos de operaciones en ellas, gracias a la utilización del álgebra y de cálculos relacionales, el SQL brinda la posibilidad de realizar consultas con el objetivo de recuperar información de las bases de datos de manera sencilla. Las consultas toman la forma de un lenguaje de comandos que permite seleccionar, insertar, actualizar, averiguar la ubicación de los datos, y más.
 
 7. Defina brevemente qué es MySQL WorkBench (valor .85)
+
+Es un editor visual de base de datos MySQL que cuenta con el respaldo oficial de MySQL. Sin duda la herramienta se caracteriza por su editor de diagramas; desde su lienzo podrás arrastrar elementos desde el catálogo o bien añadirlos desde la opción herramientas, disponible en el menú lateral. Y si deseas analizar visualmente el esquema podrás exportarlo en formato imagen o PDF o bien generar un script SQL CREATE o ALTER. MySQL Workbench es un software libre disponible para Windows Mac OS X y Linux. La herramienta dispone de una versión comercial la cual dispone de una validación del modelado o la opción de ingeniaría inversa de base de datos, características no disponibles en la versión gratuita.
 
 ## Práctica 5.
 ### Gestores de base de datos
