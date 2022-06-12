@@ -47,9 +47,11 @@ correctamente.
 SOLUCION
 
 
-CREATE DATABASE ejemplo_trigger;
-USE ejemplo_trigger;
-CREATE TABLE nota(
+	CREATE DATABASE ejemplo_trigger;
+
+	USE ejemplo_trigger;
+
+	CREATE TABLE nota(
 
 	Id_nota INT UNSIGNED PRIMARY KEY,
 	
@@ -59,7 +61,7 @@ CREATE TABLE nota(
 	
 	);
 
-CREATE TABLE registro(
+	CREATE TABLE registro(
 
 	Id_regristo INT AUTO_INCREMENT PRIMARY KEY,
 	
@@ -69,20 +71,29 @@ CREATE TABLE registro(
 	
 	);
 
-DELIMITER //
+	DELIMITER //
 
-CREATE TRIGGER tg_check_nota_before_insert BEFORE INSERT ON nota
-FOR EACH ROW BEGIN
-INSERT INTO registro(Accion) VALUES ('Se agregó una nota');
-END//
-DELIMITER ;
+	CREATE TRIGGER tg_check_nota_before_insert BEFORE INSERT ON nota
 
-DELIMITER //
-CREATE TRIGGER tg_check_nota_before_update BEFORE UPDATE ON nota
-FOR EACH ROW BEGIN
-INSERT INTO registro(Accion) VALUES ('Se modifico una nota');
-END//
-DELIMITER ;
+	FOR EACH ROW BEGIN
+
+	INSERT INTO registro(Accion) VALUES ('Se agregó una nota');
+	
+	END//
+	
+	DELIMITER ;
+
+	DELIMITER //
+	
+	CREATE TRIGGER tg_check_nota_before_update BEFORE UPDATE ON nota
+	
+	FOR EACH ROW BEGIN
+	
+	INSERT INTO registro(Accion) VALUES ('Se modifico una nota');
+	
+	END//
+	
+	DELIMITER ;
 
 
 https://www.db-fiddle.com/f/4FeWS6DSsqRMkw37q6CRwV/2
