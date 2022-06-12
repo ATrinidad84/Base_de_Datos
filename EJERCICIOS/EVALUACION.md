@@ -29,6 +29,8 @@ Las funciones principales del administrador de base de datos son:
 3. En una BD al usuario del sistema se le brindarán recursos para realizar diversas
 operaciones sobre estos archivos, tales como: (valor 1.5)
 
+La gestión de datos, los usuarios pueden almacenar datos de forma estructurada y acceder posteriormente a ellos. Pueden crear y administrar los datos y, en algunos casos, los usuarios pueden construir sus propias bases de datos mediante el uso de software de base de datos.
+
 4. ¿Qué es un Sistema de Información? (valor 1.5)
 
 Es un conjunto de elementos orientados al tratamiento y administración de datos e información, organizados y listos para su posterior uso, generados para cubrir necesidad.
