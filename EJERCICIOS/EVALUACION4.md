@@ -63,6 +63,7 @@ CREATE TABLE registro(
 	);
 
 DELIMITER //
+
 CREATE TRIGGER tg_check_nota_before_insert BEFORE INSERT ON nota
 FOR EACH ROW BEGIN
 INSERT INTO registro(Accion) VALUES ('Se agregó una nota');
